@@ -168,12 +168,13 @@ public class AuthorizationAspect {
 	 * @return
 	 */
 	private boolean hasAccess(String requester, String provider) {
-		if (sharedUserBlogs.containsKey(requester)) {
-			if (sharedUserBlogs.get(requester).contains(provider))
-				return true;
-		}
-
-		return false;
+		if (!sharedUserBlogs.containsKey(requester)) 
+			return false;
+		
+		if (!sharedUserBlogs.get(requester).contains(provider))
+			return false;
+		
+		return true;
 	}
 	
 }
