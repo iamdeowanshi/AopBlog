@@ -2,7 +2,7 @@ CMPE275- LAB1-AOP BlogService
 ===================
 
 
-###Goal
+### Goal
 The purpose of this assignment is to implement advices for BlogService methods.
 
 
@@ -12,7 +12,7 @@ Description
 
 Application should implement following requirements and throw appropriate exception. 
 
-> **Requirement:**
+**Requirement:**
 
 > 1. Once can share his blog with anybody.
 > 2. One can only read blogs that are shared with him, or his own blog. In any other case, an AccessDeniedExeption is thrown.
